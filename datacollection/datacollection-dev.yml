@@ -1,7 +1,30 @@
 spring:
-  application:
-    name: datacollection
-  env: dev
   data:
     mongodb:
-      uri: http://localhost:8089
+      uri: mongodb://192.168.178.129:27017/edx
+  redis:
+    url: http://192.168.178.129:6379
+  cache:
+    ehcache:
+      config: ehcache.xml
+  application:
+    name: datacollection
+
+
+
+datacollection:
+  recordExpireTime: 180
+  areacode: 100000
+
+#netty相关配置
+netty:
+  client:
+    host: 127.0.0.1
+    port: 11211
+  server:
+    port: 10001
+debug: false
+
+
+
+
