@@ -1,6 +1,8 @@
 spring:
   application:
-    name: config
+    name: datacollection
+  env: dev
   data:
     mongodb:
       uri: http://localhost:8089
+  
