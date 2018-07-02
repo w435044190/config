@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: config
+  data:
+    mongodb:
+      uri: http://localhost:8089
