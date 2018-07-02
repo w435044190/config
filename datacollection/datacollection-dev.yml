@@ -6,7 +6,7 @@ spring:
     url: http://192.168.178.129:6379
   cache:
     ehcache:
-      config: ehcache.xml
+      config: classpath:ehcache.xml
   application:
     name: datacollection
 
